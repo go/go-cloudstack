@@ -976,7 +976,7 @@ func (s *FirewallService) CreateFirewallRule(p *CreateFirewallRuleParams) (*Crea
 type CreateFirewallRuleResponse struct {
 	JobID       string `json:"jobid,omitempty"`
 	Cidrlist    string `json:"cidrlist,omitempty"`
-	Endport     int    `json:"endport,omitempty"`
+	Endport     string `json:"endport,omitempty"`
 	Fordisplay  bool   `json:"fordisplay,omitempty"`
 	Icmpcode    int    `json:"icmpcode,omitempty"`
 	Icmptype    int    `json:"icmptype,omitempty"`
@@ -985,7 +985,7 @@ type CreateFirewallRuleResponse struct {
 	Ipaddressid string `json:"ipaddressid,omitempty"`
 	Networkid   string `json:"networkid,omitempty"`
 	Protocol    string `json:"protocol,omitempty"`
-	Startport   int    `json:"startport,omitempty"`
+	Startport   string `json:"startport,omitempty"`
 	State       string `json:"state,omitempty"`
 	Tags        []struct {
 		Account      string `json:"account,omitempty"`
